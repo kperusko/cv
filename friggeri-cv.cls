@@ -45,18 +45,18 @@
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
-
-\RequirePackage[quiet]{fontspec}
+%\RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[]{SourceSansPro-Regular}
+\newfontfamily\thinfont[]{SourceSansPro-Light}
+\newfontfamily\headingfont[]{SourceSansPro-Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{SourceSansPro-Light}
 
-\setmathfont{XITS Math}
+\usepackage{unicode-math} 
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -158,7 +158,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4.6}(0.7, 4.33)
   \begin{flushright}
   \obeycr
 }{%
