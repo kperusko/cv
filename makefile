@@ -9,4 +9,4 @@ print:
 	@rm -f cv_print.tex
 
 clean:
-	@zsh -c 'setopt NULL_GLOB; rm -f *.{aux,bcf,dvi,out,run.xml,orig,log}'
+	@zsh -c 'setopt NULL_GLOB; rm -f *.{aux,bbl,blg,bcf,dvi,out,run.xml,orig,log}'
