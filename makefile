@@ -11,4 +11,4 @@ print:
 	@rm -f cv_print.tex
 
 clean:
-	@rm -f cv*.{aux,bcf,dvi,out,run.xml,orig} *.log
+	@zsh -c 'setopt NULL_GLOB; rm -f *.{aux,bcf,dvi,out,run.xml,orig,log}'
